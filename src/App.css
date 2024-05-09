@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars due to animation */
+}
+
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: backgroundAnimation 20s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes backgroundAnimation {
+  /* Your existing animation keyframes */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #7D5BA6;
+  }
+  25% {
+    background-color: #4B0082;
+  }
+  50% {
+    background-color: #9400D3;
+  }
+  75% {
+    background-color: #6A5ACD;
+  }
+  100% {
+    background-color: #7D5BA6;
+  }
+}
+
+/* Rest of your existing styles */
+
+
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4B0082; /* Dark Purple Color */
+  width: 700px;
+  max-width: 90%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  color: #FFF5E1; /* Light Cream Text Color */
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.author {
+  color: #FFF5E1;
+  font-size: 18px;
+  font-style: italic;
+}
+
+
+
+button {
+  background-color: #FFF5E1;
+  color: #4B0082; /* Dark Purple Text Color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #4B0082;
+  color: #FFF5E1;
+}
